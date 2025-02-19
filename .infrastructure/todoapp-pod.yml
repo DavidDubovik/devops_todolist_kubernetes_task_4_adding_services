@@ -13,7 +13,7 @@ spec:
     - containerPort: 8080
     env:
     - name:
-      value: ""
+      value: "PYTHONUNBUFFERED=1"
     livenessProbe:
       httpGet:
         path: api/health
